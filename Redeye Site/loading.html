@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Loading</title>
+<script src="jquery.js"></script>
+<link href="loading.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<center><img id="loadingEye" src="img/loadingEye.png" width="128px" height="auto" alt="redeye">
+    </center>
+    <div class="sk-cube-grid">
+      <div class="sk-cube sk-cube1"></div>
+      <div class="sk-cube sk-cube2"></div>
+      <div class="sk-cube sk-cube3"></div>
+      <div class="sk-cube sk-cube4"></div>
+      <div class="sk-cube sk-cube5"></div>
+      <div class="sk-cube sk-cube6"></div>
+      <div class="sk-cube sk-cube7"></div>
+      <div class="sk-cube sk-cube8"></div>
+      <div class="sk-cube sk-cube9"></div>
+    </div>
+    <audio id="myAudio" src="loadingSound.mp3"></audio>
+</body>
+<script type="text/javascript">
+	document.getElementById('myAudio').play();
+	
+	setTimeout(function(){
+       window.location='redeye.html';
+    }, 5000);
+</script>
+</html>
